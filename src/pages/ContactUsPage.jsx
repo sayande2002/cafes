@@ -3,122 +3,102 @@ import React from "react";
 const ContactUsPage = () => {
   return (
     <>
-      {/*
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
-*/}
-
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-lg text-center">
-          <h1 className="text-2xl font-bold sm:text-3xl">Contact Us</h1>
-
-          <p className="mt-4 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero
-            nulla eaque error neque ipsa culpa autem, at itaque nostrum!
-          </p>
+      <h1 className="text-2xl font-bold sm:text-3xl text-center">Contact Us</h1>
+      <div className="flex flex-col gap-10 justify-center items-center lg:flex-row lg:justify-around py-5">
+        <div>
+          <h1 className="text-lg font-bold text-center">
+            Phone Number- 9876543211
+          </h1>
+          <h1 className="text-lg font-bold text-center">
+            Email- example@domain.com
+          </h1>
+          <iframe
+            title="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.6193195499686!2d88.41285357497229!3d22.443349679583992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0272166e4cb263%3A0x27f12170efd9ddee!2sFuture%20Institute%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1686409941816!5m2!1sen!2sin"
+            width={600}
+            height={450}
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
 
-        <form action="" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
-          <div>
-            <label htmlFor="email" className="sr-only">
-              Email
-            </label>
+        <div className="px-4 py-16 sm:px-6 lg:px-8 bg-slate-300 rounded-lg">
+          <div className="mx-auto max-w-lg text-center">
+            <h1 className="text-2xl font-bold sm:text-3xl">Message Us</h1>
 
-            <div className="relative">
-              <input
-                type="email"
-                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Enter email"
-              />
+            <p className="mt-4 text-gray-500">
+              Contact with us and write a message you want to send us !
+            </p>
+          </div>
 
-              <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 text-gray-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                  />
-                </svg>
-              </span>
+          <form action="" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+            <div>
+              <label htmlFor="fullname" className="sr-only">
+                Full Name
+              </label>
+
+              <div className="relative">
+                <input
+                  type="text"
+                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Full Name"
+                />
+              </div>
             </div>
-          </div>
+            <div>
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
 
-          <div>
-            <label htmlFor="password" className="sr-only">
-              Password
-            </label>
-
-            <div className="relative">
-              <input
-                type="password"
-                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Enter password"
-              />
-
-              <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 text-gray-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  />
-                </svg>
-              </span>
+              <div className="relative">
+                <input
+                  type="email"
+                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Enter email"
+                />
+              </div>
             </div>
-          </div>
 
-          <div>
-            <label htmlFor="password" className="sr-only">
-              Message
-            </label>
+            <div>
+              <label htmlFor="password" className="sr-only">
+                Password
+              </label>
 
-            <div className="relative">
-              <textarea
-                type="test"
-                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Write a message"
-              />
+              <div className="relative">
+                <input
+                  type="password"
+                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Enter password"
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="flex items-center justify-between">
-            {/* <p className="text-sm text-gray-500">
-              No account?
-              <a className="underline" href="">
-                Sign up
-              </a>
-            </p> */}
+            <div>
+              <label htmlFor="message" className="sr-only">
+                Message
+              </label>
 
-            <button
-              type="submit"
-              className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+              <div className="relative">
+                <textarea
+                  type="text"
+                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Write a message"
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <button
+                type="submit"
+                className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );
