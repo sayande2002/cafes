@@ -9,6 +9,7 @@ import PartyBookingPage from "./pages/PartyBookingPage";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MoreMenu from "./pages/MoreMenu";
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bookings" element={<BookingPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/menu" element={<MenuPage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/bookings/table-booking" element={<TableBbookingPage />} />
         <Route path="/bookings/party-booking" element={<PartyBookingPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/menu/:route" element={<MoreMenu />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
       </Routes>
       <Footer />
     </>
