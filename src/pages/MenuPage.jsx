@@ -19,7 +19,8 @@ const menu = [
 const MenuPage = () => {
   return (
     <>
-      <div className="flex justify-center flex-wrap gap-8 mt-4">
+      <h1 className="text-2xl font-bold sm:text-3xl text-center">Menu</h1>
+      <div className="flex justify-center flex-wrap gap-8 mt-4 p-5">
         {menu.map(({ title, image }) => (
           <Card title={title} image={image} />
         ))}

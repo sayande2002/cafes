@@ -151,26 +151,26 @@ export default function Header() {
           </Popover> */}
 
           <Link
-            to="about-us"
             className="text-sm font-semibold leading-6 text-gray-900"
+            to="about-us"
           >
             About Us
           </Link>
           <Link
-            to="menu"
             className="text-sm font-semibold leading-6 text-gray-900"
+            to="menu"
           >
             Menu
           </Link>
           <Link
-            to="bookings"
             className="text-sm font-semibold leading-6 text-gray-900"
+            to="bookings"
           >
             Booking
           </Link>
           <Link
-            to="contact-us"
             className="text-sm font-semibold leading-6 text-gray-900"
+            to="contact-us"
           >
             Contact Us
           </Link>
