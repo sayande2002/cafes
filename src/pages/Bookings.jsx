@@ -20,7 +20,7 @@ const Bookings = () => {
   return (
     <>
       <h1 className="text-2xl font-bold sm:text-3xl text-center">Booking</h1>
-      <div className="flex justify-center items-center flex-wrap gap-8 mt-4">
+      <div className="flex justify-center items-center flex-wrap gap-8 mt-4 p-8">
         {booking.map(({ name, route, image }) => (
           <BookingCard name={name} route={route} image={image} />
         ))}
